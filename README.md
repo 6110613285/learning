@@ -4,9 +4,8 @@
 
 สรุปเนื้อหาวิชา
 
-<div class="text-f6f8fa bg-0366d6 mb-2">
-  .text-white on .bg-blue
-</div>
+**ส่งการบ้านครั้งที่1**
+
 
 [งานครั้งที่1](https://www.youtube.com/watch?v=wY9R6XCizwM&t=1s)
 
