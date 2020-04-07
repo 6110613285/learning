@@ -5,7 +5,7 @@
 สรุปเนื้อหาวิชา
 
 <div class="text-white bg-blue mb-2">
-**ส่งการบ้านครั้งที่1**
+ส่งการบ้านครั้งที่1
 </div>
 
 [งานครั้งที่1](https://www.youtube.com/watch?v=wY9R6XCizwM&t=1s)
