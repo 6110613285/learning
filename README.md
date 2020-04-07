@@ -4,7 +4,7 @@
 
 สรุปเนื้อหาวิชา
 
-<div class="text-white bg-blue mb-2">
+<div class="text-f6f8fa bg-0366d6 mb-2">
   .text-white on .bg-blue
 </div>
 
