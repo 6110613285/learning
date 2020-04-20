@@ -21,13 +21,14 @@ Computerนั้นจะประกอบไปด้วย
 3.Control Unit
 
 โดนรายวิชาCN210 ได้เลือกCPU MIPSมาศีกษา
+
 ทุกคำสั่งของ MIPS จะมีขนาด 32 bits
 
 MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 
 1.R-Format ใช้ในการคำนวณ
 
-|R-Format |       
+|R-Format |        |        |        |           |          |    
 
 |op 6bits |rs 5bits|rt 5bits|rd 5bits|shamt 5bits|func 6bits|
 
