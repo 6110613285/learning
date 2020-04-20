@@ -62,9 +62,8 @@ Ex. j 0x81fc084c
 
 คำสั่งที่มนุษย์ป้อนให้คอมพิวเตอร์
 
-class Test{
-
-    public static void main(String[] args){
+class Test {
+        public static void main(String[] args){
 
         int a = 10;
     
@@ -72,9 +71,8 @@ class Test{
     
         int c = a+b;
     
-    }
-
-}
+                }
+          }
 
 === Machine Language ===
 
