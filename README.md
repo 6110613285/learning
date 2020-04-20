@@ -28,7 +28,7 @@ MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 
 1.R-Format ใช้ในการคำนวณ
 
-|R-Format |        |        |        |           |          |    
+|R-Format |     
 
 |op 6bits |rs 5bits|rt 5bits|rd 5bits|shamt 5bits|func 6bits|
 
@@ -43,6 +43,8 @@ MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 |J-Format|          
 
 |op 6bits|address 26 bits|
+
+![image](https://www.researchgate.net/profile/Flavio_Padua/publication/269463299/figure/fig1/AS:392119614230533@1470500009360/The-MIPS-instruction-format.png)
 
 
 
