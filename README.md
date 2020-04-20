@@ -26,13 +26,13 @@ MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 
 1.R-Format ใช้ในการคำนวณ
 
-|op 6bits |rs 5bits|rt 5bits|rd 5bits|shamt 5bits|func 6bits|
-
 2.I-Format ใช้ในการย้ายข้อมูล
 
-|op 6bits|rs 5bits|rt 5bits|offset 16bits|
-
 3.J-Format การย้ายไปทำงานที่ตำแหน่งอื่น
+
+|op 6bits |rs 5bits|rt 5bits|rd 5bits|shamt 5bits|func 6bits|
+
+|op 6bits|rs 5bits|rt 5bits|offset 16bits|
 
 |op 6bits|address 26 bits|
 
