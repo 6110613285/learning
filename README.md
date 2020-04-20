@@ -21,20 +21,35 @@ Computerนั้นจะประกอบไปด้วย
 3.Control Unit
 
 โดนรายวิชาCN210 ได้เลือกCPU MIPSมาศีกษา
+ทุกคำสั่งของ MIPS จะมีขนาด 32 bits
 
 MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 
 1.R-Format ใช้ในการคำนวณ
-
-2.I-Format ใช้ในการย้ายข้อมูล
-
-3.J-Format การย้ายไปทำงานที่ตำแหน่งอื่น
-
+|R-Format |        |        |        |           |          |
 |op 6bits |rs 5bits|rt 5bits|rd 5bits|shamt 5bits|func 6bits|
 
+2.I-Format ใช้ในการย้ายข้อมูล
+|I-format|        |        |             |
 |op 6bits|rs 5bits|rt 5bits|offset 16bits|
 
+3.J-Format การย้ายไปทำงานที่ตำแหน่งอื่น
+|J-Format|               |
 |op 6bits|address 26 bits|
+
+
+
+
+
+
+
+
+**ส่งการบ้านครั้งที่1**
+
+
+[งานครั้งที่1](https://www.youtube.com/watch?v=wY9R6XCizwM&t=1s)
+
+อธิบายคำสั่ง jump ใน cpu MIPS
 
 Ex. j 0x81fc084c
 
@@ -46,13 +61,6 @@ Ex. j 0x81fc084c
 
 4.เเปลงจากฐาน2กลับมาเป็นฐาน16 จะได้เลข087f0213 ตัวเลขนี้คือตำแหน่งที่จะjumpไปทำงานคำสั่งต่อไป
 
-
-**ส่งการบ้านครั้งที่1**
-
-
-[งานครั้งที่1](https://www.youtube.com/watch?v=wY9R6XCizwM&t=1s)
-
-อธิบายคำสั่ง jump ใน cpu MIPS
 
 **ส่งการบ้านครั้งที่2**
 
