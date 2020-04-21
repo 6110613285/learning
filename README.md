@@ -6,19 +6,19 @@
 
 Computerนั้นจะประกอบไปด้วย
 
-1.หน่วยประมวลผลกลางหรือCPU(Central Processing Unit)
+        1.หน่วยประมวลผลกลางหรือCPU(Central Processing Unit)
 
-2.main memory
+        2.main memory
 
-3.Input/Output
+        3.Input/Output
 
 โดยในCPUนั้นจะประกอบไปด้วย
 
-1.ALU(Artimetric and logic unit) ใช้ในการคำนวณและหาตรรกะทางคณิตศาสตร์
+        1.ALU(Artimetric and logic unit) ใช้ในการคำนวณและหาตรรกะทางคณิตศาสตร์
 
-2.Register
+        2.Register
 
-3.Control Unit
+        3.Control Unit
 
 โดนรายวิชาCN210 ได้เลือกCPU MIPSมาศีกษา
 
@@ -26,11 +26,11 @@ Computerนั้นจะประกอบไปด้วย
 
 MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 
-1.R-Format ใช้ในการคำนวณ
+        1.R-Format ใช้ในการคำนวณ
 
-2.I-Format ใช้ในการย้ายข้อมูล
+        2.I-Format ใช้ในการย้ายข้อมูล
 
-3.J-Format การย้ายไปทำงานที่ตำแหน่งอื่น
+        3.J-Format การย้ายไปทำงานที่ตำแหน่งอื่น
 
 ![image](https://www.researchgate.net/profile/Flavio_Padua/publication/269463299/figure/fig1/AS:392119614230533@1470500009360/The-MIPS-instruction-format.png)
 
@@ -43,15 +43,15 @@ MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 
 อธิบายคำสั่ง jump ใน cpu MIPS
 
-Ex. j 0x81fc084c
+        Ex. j 0x81fc084c
 
-1.เปลี่ยน81fc084cที่เป็นเลขฐาน16ให้เป็นเลขฐาน2 >>> 1000 0001 1111 1100 0000 1000 0100 1100
+        1.เปลี่ยน81fc084cที่เป็นเลขฐาน16ให้เป็นเลขฐาน2 >>> 1000 0001 1111 1100 0000 1000 0100 1100
 
-2.นำbitที่5ถึง32 มาshiftingจากนั้นนำไปต่อกับopcode (j:000010)
+        2.นำbitที่5ถึง32 มาshiftingจากนั้นนำไปต่อกับopcode (j:000010)
+        
+        3.จะได้เลขฐาน2 3 bits คือ 0000 1000 0111 1111 0000 0010 0001 0011
 
-3.จะได้เลขฐาน2 3 bits คือ 0000 1000 0111 1111 0000 0010 0001 0011
-
-4.เเปลงจากฐาน2กลับมาเป็นฐาน16 จะได้เลข087f0213 ตัวเลขนี้คือตำแหน่งที่จะjumpไปทำงานคำสั่งต่อไป
+        4.เเปลงจากฐาน2กลับมาเป็นฐาน16 จะได้เลข087f0213 ตัวเลขนี้คือตำแหน่งที่จะjumpไปทำงานคำสั่งต่อไป
 
 
 **ส่งการบ้านครั้งที่2**
@@ -139,6 +139,7 @@ Ex. j 0x81fc084c
 อธิบายคำสั่งlw ในmulti-clock-cycle
 
         คำสั่ง lw ใน Multi Cycle นั้นมีทั้งหมด 5 ขั้นตอน
+        
         1.อ่านคำสั่งจาก Memory มาเก็บใน IR (Instruction Register) และนำ PC = PC + 4 พร้อมๆกัน
         
         2.นำ ค่าจาก $rs และ $rt ไปเก็บไว้ที่ A,B ตามลำดับ นำค่า offset มาแปลงเป็น 32 บิท
