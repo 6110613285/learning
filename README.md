@@ -106,7 +106,7 @@ Ex. j 0x81fc084c
 
 ความแตกต่างระหว่างsingle-clock-cycleกับmulti-clock-cycle
 
-*ลักษณะของ Single Cycle 
+1. ลักษณะของ Single Cycle 
         *มี ALU 3 ตัว   
         *มี Memory 2 ตัว 
         *1 คำสั่ง = 1 Cycle  
