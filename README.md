@@ -109,11 +109,8 @@ Ex. j 0x81fc084c
 ลักษณะของ Single Cycle 
 
 *มี ALU 3 ตัว 
-
 *มี Memory 2 ตัว 
-
 *1 คำสั่ง = 1 Cycle  
-
 *ในทุกๆคำสั่งใช้เวลาเท่ากันทำให้ใช้เวลามากเนื่องจากจะใช้เวลาของคำสั่งที่ทำงานใช้เวลามากสุด
 
 ![image](https://cseweb.ucsd.edu/~j2lau/cs141/single_cycle_cpu_datapath.png)
@@ -121,13 +118,9 @@ Ex. j 0x81fc084c
 ลักษณะของ Multi Cycle มีดังนี้
 
 *มี ALU เพียงตัวเดียว
-
 *มี Memory เพียงตัวเดียว
-
 *มีการพักข้อมูลที่ตำแหน่ง a และ b ในรูป
-
 *ใช้เวลาแต่ละคำสั่งไม่เท่ากัน
-
 *มี ALUout ที่เก็บค่าหลังจากคำนวณ
 
 ![image](https://cseweb.ucsd.edu/~j2lau/cs141/multi_cycle_cpu_datapath.png)
