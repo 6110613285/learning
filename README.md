@@ -131,14 +131,56 @@ Ex. j 0x81fc084c
 
 อธิบายคำสั่งlw ในmulti-clock-cycle
 
+        คำสั่ง lw ใน Multi Cycle นั้นมีทั้งหมด 5 ขั้นตอน
+        1.อ่านคำสั่งจาก Memory มาเก็บใน IR (Instruction Register) และนำ PC = PC + 4 พร้อมๆกัน
+        2.นำ ค่าจาก $rs และ $rt ไปเก็บไว้ที่ A,B ตามลำดับ นำค่า offset มาแปลงเป็น 32 บิทแล้วนำไปที่ ALU เพื่อบวกกับ PC แล้วนำไปเก็บที่ ALUout (A =                 Reg[IR[25-21]]) (B = Reg[IR[20-16]])
+        3.นำค่า จาก A เข้ามาบวกกับ offset และนำค่าไปไว้ที่ ALUout (ALUOut = A + sign-extend(IR[15-0])
+        4.ค่าที่ได้จาก ALUout คือ ค่าของ Address ของ Memory ที่จะถูกอ่านค่าออกมา (MDR = Memory[ALUout])
+        5.นำค่าที่อ่านมาจาก Memory ไปเก็บไว้ใน $rt (Reg[IR[20-16]] = MDR)
+
 **ส่งการบ้านครั้งที่5**
 
 [งานครั้งที่5](https://www.youtube.com/watch?v=s8lwbWAGc94)
 
-อธิบานคำสั่งbeq ในmulti-clock-cycle
+อธิบายคำสั่งbeq ในmulti-clock-cycle
+        
+        beq (branch on equal) เป็นคำสั่งประเภท I-Format ซึ่งคำสั่งนี้มีหน้าที่ JUMP โดยจะ JUMP อย่างมีเงื่อนไข คือการดูว่าข้อมูลที่ $rs และ $rt เท่ากันหรือไม่ หาก         เท่ากันให้   JUMP ไปยังตำแหน่ง Address ต่อไป มี 3 ขั้นตอน
+        1.อ่านคำสั่งจาก Memory มาเก็บใน IR (Instruction Register) และนำ PC = PC + 4 พร้อมๆกัน
+        2.นำค่า $rs และ $rt ไปเก็บไว้ที่ A,B ตามลำดับ (A = Reg[IR[25-21]]) (B = Reg[IR[20-16]])
+        3.นำค่าจาก A และ B มาเปรียบเทียบกัน หากเท่ากันจะเก็บผลลัพธ์ที่ได้ไว้ใน ALUout แล้ว JUMP ไปยัง Address ต่อไป หากไม่เท่ากันจะข้ามไปทำคำสั่งถัดไปทันที
 
 **ส่งการบ้านครั้งที่6**
 
 [งานครั้งที่6](https://www.youtube.com/watch?v=rXHOVZxnRus&t=13s)
 
 อธิบายสัญญาณที่ใช้ควบคุมใน R-format
+
+ประกอบด้วย 4 ขั้นตอน
+
+![image](https://image1.slideserve.com/3211244/slide21-n.jpg)
+
+        MemRead = 1 คือ ทำการอ่านค่าจาก Memory
+        IorD = 1 คือ เช็คว่า PC นั้นชี้ไปที่ Address ใดใน Memory
+        IRWrite = 1 คือ นำค่าจาก Address Memory ที่ถูกชี้ ไปเก็บไว้ใน IR
+        ALUSrcA = 0 คือ Mux เลือกค่าจาก 0 ซึ่งคือ PC ค่าที่ถูกเขียนใน IR จะมี ALUSrcA ทำการควบคุม
+        ALUSrcB = 1 คือ Mux เลือกค่าจาก 1 ซึ่งคือ 4 ค่าที่ถูกเขียนใน IR จะมี ALUSrcB ทำการควบคุม
+        ALUOP = ADD คือ การนำค่า PC มาบวกกับ 4
+        PCWrite = 1, PCSource = 1 นำผลลัพธ์การคำนวณเขียนทับที่ PC = PC + 4
+        
+![image](https://image1.slideserve.com/3211244/slide23-n.jpg)
+       
+        ALUSrcA = 0 คือ Mux เลือกค่าจาก 0 ซึ่งคือ PC
+        ALUSrcB = 3 คือ Mux เลือกค่าจาก 3 ซึ่งคือ Offset
+        ALUop = 0 คือ ALUop จะทำการควบคุมคำสั่ง ADD
+        
+![image](https://image1.slideserve.com/3211244/slide25-n.jpg)
+
+        ALUSrcA = 1 คือ Mux เลือกค่าจาก 1 ซึ่งคือ $rs
+        ALUSrcB = 0 คือ Mux เลือกค่าจาก 0 ซึ่งคือ $rt
+        ALUop = 2 คือ ALUop จะทำการควบคุมคำสั่งให้เป็นไปตามคำสั่งใน IR
+ 
+![image](https://image1.slideserve.com/3211244/slide27-n.jpg)
+
+        RegWrite = 1 คือ นำค่าจาก ALUout มาเขียนใน $rd
+        MemtoReg = 0 คือ Mux เลือกค่าจาก 0 ซึ่งคือ ALUout
+        RegDst = 1 คือ Mux เลือกค่าจาก 1 ซึ่งคือ $rd
