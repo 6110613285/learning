@@ -38,8 +38,7 @@ MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 
 **ส่งการบ้านครั้งที่1**
 
-
-        [งานครั้งที่1](https://www.youtube.com/watch?v=wY9R6XCizwM&t=1s)
+[งานครั้งที่1](https://www.youtube.com/watch?v=wY9R6XCizwM&t=1s)
 
 อธิบายคำสั่ง jump ใน cpu MIPS
 
@@ -56,7 +55,7 @@ MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 
 **ส่งการบ้านครั้งที่2**
 
-        [งานครั้งที่2](https://www.youtube.com/watch?v=8CIgbwNDo-g&t=8s)
+[งานครั้งที่2](https://www.youtube.com/watch?v=8CIgbwNDo-g&t=8s)
 
 อธิบายการทำงานของระบบคอมพิวเตอร์
 
@@ -102,7 +101,7 @@ MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 
 **ส่งการบ้านครั้งที่3**
 
-        [งานครั้งที่3](https://www.youtube.com/watch?v=0poRS1BtJsE)
+[งานครั้งที่3](https://www.youtube.com/watch?v=0poRS1BtJsE)
 
 ความแตกต่างระหว่างsingle-clock-cycleกับmulti-clock-cycle
 
@@ -134,7 +133,7 @@ MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 
 **ส่งการบ้านครั้งที่4**
 
-        [งานครั้งที่4](https://www.youtube.com/watch?v=yYKce5W6ZwY)
+[งานครั้งที่4](https://www.youtube.com/watch?v=yYKce5W6ZwY)
 
 อธิบายคำสั่งlw ในmulti-clock-cycle
 
@@ -153,7 +152,7 @@ MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 
 **ส่งการบ้านครั้งที่5**
 
-        [งานครั้งที่5](https://www.youtube.com/watch?v=s8lwbWAGc94)
+[งานครั้งที่5](https://www.youtube.com/watch?v=s8lwbWAGc94)
 
 อธิบายคำสั่งbeq ในmulti-clock-cycle
         
@@ -173,7 +172,7 @@ MIPS Instruction Format จะแบ่งเป็น 3 แบบ
 
 **ส่งการบ้านครั้งที่6**
 
-        [งานครั้งที่6](https://www.youtube.com/watch?v=rXHOVZxnRus&t=13s)
+[งานครั้งที่6](https://www.youtube.com/watch?v=rXHOVZxnRus&t=13s)
 
 อธิบายสัญญาณที่ใช้ควบคุมใน R-format
 
@@ -209,7 +208,7 @@ MIPS Instruction Format จะแบ่งเป็น 3 แบบ
         
 **ส่งการบ้านครั้งที่7**
 
-        [งานครั้งที่7](https://www.youtube.com/watch?v=9rQ11iQQkxk)
+[งานครั้งที่7](https://www.youtube.com/watch?v=9rQ11iQQkxk)
 
 อธิบายการทำงานของ Pipelining 
 
@@ -219,7 +218,9 @@ Pipelining เป็นวิธีการทำคำสั่งที่ช
 
 ![image](https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/pipelining/laundry1.gif)
 
-        จากตัวอย่าง การทำงาน 1 set ใช้เวลา 2ชั่วโมง เมื่อจบsetที่ 1 จึงเริ่มทำงาน set ที่ 2 ทำให้การทำงานทั้งหมด 4 set ใช้เวลาทั้งสิ้น 8 ชั่วโมง
+        จากตัวอย่าง การทำงาน 1 set ใช้เวลา 2ชั่วโมง เมื่อจบsetที่ 1 จึงเริ่มทำงาน set ที่ 2 
+        
+        ทำให้การทำงานทั้งหมด 4 set ใช้เวลาทั้งสิ้น 8 ชั่วโมง
 
 ![image](https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/pipelining/laundry2.gif)
 
