@@ -216,13 +216,13 @@ Pipelining เป็นวิธีการทำคำสั่งที่ช
 
 โดยตัวอย่างเราจะแบ่งการทำงาน 1 set มี 4 ขั้นตอน ขั้นตอนละ 30นาที
 
-![image](https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/pipelining/laundry1.gif)
+![image](http://3.bp.blogspot.com/-6RQaYhlYk2k/UKTYQVX9csI/AAAAAAAAAGQ/0xF1OxF_N_Y/s1600/02-What-is-pipelining-01.png)
 
         จากตัวอย่าง การทำงาน 1 set ใช้เวลา 2ชั่วโมง เมื่อจบsetที่ 1 จึงเริ่มทำงาน set ที่ 2 
         
         ทำให้การทำงานทั้งหมด 4 set ใช้เวลาทั้งสิ้น 8 ชั่วโมง
 
-![image](https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/pipelining/laundry2.gif)
+![image](http://2.bp.blogspot.com/-4YXOlZ30iCQ/UKTYR4Y4FLI/AAAAAAAAAGk/pCdSkaaazVA/s1600/02-What-is-pipelining-02.png)
 
         จากตัวอย่าง  การทำงาน 1 set ใช้เวลา 2ชั่วโมง แต่เมื่อเราทำขั้นตอนที่ 2 ของsetที่1 เราเริ่มทำงานจะทำงานขั้นตอนที่1 ของsetที่ 2
 
