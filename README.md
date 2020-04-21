@@ -231,4 +231,4 @@ Pipelining เป็นวิธีการทำคำสั่งที่ช
         เมื่อเราทำขั้นตอนที่ 4 ของsetที่1 เราเริ่มทำงานจะทำงานขั้นตอนที่1 ของsetที่ 4
 
         ทำให้การทำงานทั้งหมด 4 set ใช้เวลาทั้งสิ้น 3 ชั่วโมง 30 นาที
-
+![image](https://raw.githubusercontent.com/Rathapol-Putharaksa/learning/master/clockset.png)
